@@ -1,0 +1,207 @@
+[
+    {
+        "id": "xFusion",
+        "jobPicture": "xfusion.webp",
+        "jobColor": "#10214c",
+        "jobTitle": "Full-Stack Developer",
+        "jobTime": "August 2024 - Present",
+        "jobCompany": "xFusion",
+        "jobCompanySite": "https://xfusion.io/",
+        "jobDescription": "I collaborate on the development of AI/ML agents for a leading client using Serverless architecture, AWS, JavaScript, Python, and Node.js. I'm actively involved in creating scalable solutions that leverage cutting-edge technologies in the AI and machine learning domain.",
+        "jobActivities": [
+            "Developing and deploying AI/ML agents using Serverless architecture on AWS",
+            "Building AI/ML workflows with Python and integrating them into production systems",
+            "Building scalable and efficient backend services using Node.js and AWS Lambda",
+            "Designing and implementing RESTful APIs for AI/ML model interaction",
+            "Optimizing AI/ML pipelines for improved performance and cost-effectiveness",
+            "Implementing data processing and ETL workflows using AWS services",
+            "Ensuring code quality through rigorous testing and code reviews",
+            "Continuously monitoring and improving AI/ML agent performance"
+        ],
+        "jobTechnologies": [
+            {
+                "name": "Python",
+                "icon": "python"
+            },
+            {
+                "name": "JavaScript",
+                "icon": "javascript"
+            },
+            {
+                "name": "Node.js",
+                "icon": "node"
+            },
+            {
+                "name": "AWS",
+                "icon": "aws"
+            },
+            {
+                "name": "Serverless",
+                "icon": "serverless"
+            },
+            {
+                "name": "LangChain",
+                "icon": "langchain"
+            }
+        ]
+    },
+    {
+        "id": "develop-kreativity",
+        "jobPicture": "developkreativity.webp",
+        "jobColor": "#006fff",
+        "jobTitle": "Co-Founder and Project Lead",
+        "jobTime": "November 2023 - Present",
+        "jobCompany": "Develop Kreativity",
+        "jobCompanySite": "https://developkreativity.com/",
+        "jobDescription": "I lead the design and development of several projects, creating solutions that meet client needs and transforming their concepts into a reality.",
+        "jobActivities": [
+            "Design and development of user interfaces with HTML, CSS, and JavaScript.",
+            "Back-end and API development with PHP and CodeIgniter 4.",
+            "Full-stack development with WordPress.",
+            "Consumption of REST APIs with JavaScript.",
+            "Modeling and implementation of MySQL databases."
+        ],
+        "jobTechnologies": [
+            {
+                "name": "PHP",
+                "icon": "php"
+            },
+            {
+                "name": "CodeIgniter",
+                "icon": "codeigniter"
+            },
+            {
+                "name": "JavaScript",
+                "icon": "javascript"
+            },
+            {
+                "name": "HTML",
+                "icon": "html"
+            },
+            {
+                "name": "CSS",
+                "icon": "css"
+            },
+            {
+                "name": "MySQL",
+                "icon": "mysql"
+            },
+            {
+                "name": "WordPress",
+                "icon": "wordpress"
+            },
+            {
+                "name": "Figma",
+                "icon": "figma"
+            },
+            {
+                "name": "cPanel",
+                "icon": "cpanel"
+            }
+        ]
+    },
+    {
+        "id": "university-of-southern-philippines-foundation",
+        "jobPicture": "uspf.webp",
+        "jobColor": "#27235e",
+        "jobTitle": "Full-Stack Developer (Working Scholar)",
+        "jobTime": "June 2023 - Present",
+        "jobCompany": "Information and Communications Technology Department at University of Southern Philippines Foundation",
+        "jobCompanySite": "https://uspf.edu.ph/",
+        "jobDescription": "I collaborate in the development of system applications for the university and its stakeholders, including an AI/ML chatbot Augi and the USPF Digital app, as well as enhancements to existing system applications.",
+        "jobActivities": [
+            "Design and development of user interfaces with HTML, CSS, and JavaScript.",
+            "Back-end and API development with PHP and CodeIgniter 4.",
+            "Consumption of REST APIs with JavaScript.",
+            "Modeling and implementation of MySQL databases."
+        ],
+        "jobTechnologies": [
+            {
+                "name": "PHP",
+                "icon": "php"
+            },
+            {
+                "name": "CodeIgniter",
+                "icon": "codeigniter"
+            },
+            {
+                "name": "JavaScript",
+                "icon": "javascript"
+            },
+            {
+                "name": "HTML",
+                "icon": "html"
+            },
+            {
+                "name": "CSS",
+                "icon": "css"
+            },
+            {
+                "name": "MySQL",
+                "icon": "mysql"
+            },
+            {
+                "name": "Bootstrap",
+                "icon": "bootstrap"
+            },
+            {
+                "name": "jQuery",
+                "icon": "jquery"
+            },
+            {
+                "name": "cPanel",
+                "icon": "cpanel"
+            },
+            {
+                "name": "AWS",
+                "icon": "aws"
+            },
+            {
+                "name": "Git",
+                "icon": "git"
+            }
+        ]
+    },
+    {
+        "id": "mytoolz",
+        "jobPicture": "mytoolz.webp",
+        "jobColor": "#0086eb",
+        "jobTitle": "Back-End Developer",
+        "jobTime": "July 2021 - December 2021",
+        "jobCompany": "MyToolz.net",
+        "jobCompanySite": "https://mytoolz.net/tools/",
+        "jobDescription": "I contributed to the design and development of several web tools, including account checkers and content generators, as well as the enhancement of back-end and API infrastructures, improving service speed and the user experience.",
+        "jobActivities": [
+            "Design and development of user interfaces with HTML, CSS, and JavaScript.",
+            "Back-end and API development with PHP.",
+            "Consumption of REST APIs with JavaScript.",
+            "Modeling and implementation of MySQL databases."
+        ],
+        "jobTechnologies": [
+            {
+                "name": "PHP",
+                "icon": "php"
+            },
+            {
+                "name": "JavaScript",
+                "icon": "javascript"
+            },
+            {
+                "name": "HTML",
+                "icon": "html"
+            },
+            {
+                "name": "CSS",
+                "icon": "css"
+            },
+            {
+                "name": "MySQL",
+                "icon": "mysql"
+            },
+            {
+                "name": "jQuery",
+                "icon": "jquery"
+            }
+        ]
+    }
+]
