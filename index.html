@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+    background: linear-gradient(135deg, #2c1413, #5a2423, #4e3b30); /* Warna lebih gelap tanpa kuning */
+    background-size: 200% 200%;
+    animation: gradientMove 9s ease infinite;
+    color: #f0f0f0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+        @keyframes gradientMove {
+            0% {
+                background-position: 0% 0%;
+            }
+            50% {
+                background-position: 100% 100%;
+            }
+            100% {
+                background-position: 0% 0%;
+            }
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: #ffffff; /* White text for headings */
+        }
+
+        a {
+            color: #1e90ff; /* Bright blue for links */
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #ffcc00; /* Gold color on link hover */
+        }
+
+        .form-group {
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            #hutao-image {
+                display: none;
+            }
+        }
+
+        .social-login {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .or-login {
+            text-align: center;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        .form-control {
+            background-color: #6b4f4f; /* Darker background */
+            color: #f0f0f0; /* Light gray text color */
+            border: 1px solid #ccc;
+            transition: color 0.3s; /* Smooth transition for color */
+        }
+
+        .form-control:focus {
+            background-color: #6b4f4f; /* Keep the same background on focus */
+            color: #000000; /* Change text color to black on focus */
+            border-color: #ffcc00; /* Highlight border on focus */
+            outline: none; /* Remove default outline */
+        }
+
+        .login-box {
+            background-color: transparent; /* Remove background color */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Keep shadow if needed */
+        }
+
+        .btn-primary {
+            background-color: #663c25;
+            border: none;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #ffcc00;
+        }
+
+        /* Rotate Animation */
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(6deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
+        #hutao-image {
+            animation: rotate 5s linear infinite; /* Duration and infinite rotation */
+        }
+    </style>
+
+    <title>Sign In/Sign Up</title>
+</head>
+
+<body>
+    <div class="content">
+  <header class="header">
+    <div class="container">
+        <h1 class="logo">hymndavinci.</h1>
+    </div>
+</header>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const formTitle = document.getElementById('form-title');
+    const submitBtn = document.getElementById('submit-btn');
+    const toggleMessage = document.getElementById('toggle-message');
+    const emailField = document.getElementById('email-field');
+    const rememberSection = document.getElementById('remember-section');
+    const toggleForm = document.getElementById('toggle-form');
+
+    let isSignUp = false;
+
+    // Single event listener for the toggle form
+    toggleForm.addEventListener('click', function(event) {
+        event.preventDefault();
+        isSignUp = !isSignUp;
+
+        if (isSignUp) {
+            formTitle.innerText = 'Sign Up';
+            submitBtn.value = 'Sign Up';
+            emailField.style.display = 'block';
+            rememberSection.style.display = 'none';
+            toggleMessage.innerHTML = 'Already have an account? <a href="#" id="toggle-form">Log In</a>';
+        } else {
+            formTitle.innerText = 'Sign In';
+            submitBtn.value = 'Log In';
+            emailField.style.display = 'none';
+            rememberSection.style.display = 'flex';
+            toggleMessage.innerHTML = 'Don\'t have an account? <a href="#" id="toggle-form">Sign Up</a>';
+        }
+
+        // Update the toggle form reference since we replaced the HTML
+        document.getElementById('toggle-form').addEventListener('click', event => {
+            event.preventDefault();
+            toggleForm.click();
+        });
+    });
+});
+</script>
+
+<style>
+    .nav-links {
+        display: none; /* Initially hide the menu */
+    }
+
+    .nav-links:not(.hidden) {
+        display: block; /* Show when active */
+    }
+</style>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/hutao.png" alt="Image" class="img-fluid" id="hutao-image">
+                </div>
+                <div class="col-md-6 contents">
+                    <div class="login-box">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="mb-4">
+                                    <h3 id="form-title">Sign In</h3>
+                                    <p class="mb-4">Development by Muhammad Bintang K</p>
+                                </div>
+                                <form action="#" method="post" id="auth-form">
+                                    <div class="form-group first" id="username-field">
+                                        <label for="username">Username</label>
+                                        <input type="text" class="form-control" id="username" required>
+                                    </div>
+
+                                    <div class="form-group last mb-4" id="password-field">
+                                        <label for="password">Password</label>
+                                        <input type="password" class="form-control" id="password" required>
+                                    </div>
+
+                                    <div class="form-group last mb-4" id="email-field" style="display:none;">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+
+                                    <div class="d-flex mb-5 align-items-center" id="remember-section">
+                                        <label class="control control--checkbox mb-0">
+                                            <span class="caption">Remember me</span>
+                                            <input type="checkbox" checked="checked"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                        <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span>
+                                    </div>
+
+                                    <input type="submit" value="Log In" class="btn btn-block btn-primary" id="submit-btn">
+                                    <div class="or-login">
+    <span> or log in with </span>
+</div>
+
+
+                                    <div class="social-login">
+                                        <a href="#" class="facebook">
+                                            <span class="icon-facebook mr-3"></span>
+                                        </a>
+                                        <a href="#" class="twitter">
+                                            <span class="icon-twitter mr-3"></span>
+                                        </a>
+                                        <a href="#" class="google">
+                                            <span class="icon-google mr-3"></span>
+                                        </a>
+                                    </div>
+                                </form>
+
+                                <div class="text-center mt-3">
+                                    <span id="toggle-message">Don't have an account? <a href="#" id="toggle-form">Sign Up</a></span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2024 Hymn Da Vinci. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        const formTitle = document.getElementById('form-title');
+        const submitBtn = document.getElementById('submit-btn');
+        const toggleMessage = document.getElementById('toggle-message');
+        const emailField = document.getElementById('email-field');
+        const rememberSection = document.getElementById('remember-section');
+
+        let isSignUp = false;
+    
+        document.getElementById('topbar-menu-button').addEventListener('click', function() {
+    const isActive = this.getAttribute('data-active') === 'true';
+    this.setAttribute('data-active', !isActive);
+});
+
+
+        document.getElementById('toggle-form').addEventListener('click', function(event) {
+            event.preventDefault();
+            isSignUp = !isSignUp;
+
+            if (isSignUp) {
+                formTitle.innerText = 'Sign Up';
+                submitBtn.value = 'Sign Up';
+                emailField.style.display = 'block';
+                rememberSection.style.display = 'none';
+                toggleMessage.innerHTML = "Already have an account? <a href='#' id='toggle-form'>Log In</a>";
+            } else {
+                formTitle.innerText = 'Sign In';
+                submitBtn.value = 'Log In';
+                emailField.style.display = 'none';
+                rememberSection.style.display = 'flex';
+                toggleMessage.innerHTML = "Don't have an account? <a href='#' id='toggle-form'>Sign Up</a>";
+            }
+
+            document.getElementById('toggle-form').addEventListener('click', arguments.callee);
+        });
+
+        $(function() {
+            $('.form-control').on('input', function() {
+                var $field = $(this).closest('.form-group');
+                if (this.value) {
+                    $field.addClass('field--not-empty');
+                } else {
+                    $field.removeClass('field--not-empty');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
